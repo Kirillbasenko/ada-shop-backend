@@ -7,6 +7,7 @@ const fileUpload = require("express-fileupload")
 const router = require("./routes/index")
 const errorHandler = require("./middleware/ErrorHendlingMiddleware")
 const path = require("path")
+const { Client } = require('pg');
 
 const PORT = process.env.PORT || 5000
 
@@ -31,5 +32,14 @@ const start = async () => {
       console.log(e);
    }
 }
+
+const client = new Client({
+   connectionString: process.env.POSTGRESQL,
+   ssl: {
+      rejectUnauthorized: false
+   }
+});
+
+client.connect();
 
 start()
