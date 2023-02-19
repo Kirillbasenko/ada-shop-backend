@@ -1,15 +1,15 @@
 const {Sequelize} = require("sequelize")
 
-/*module.exports = new Sequelize(
-   process.env.DB_NAME,
-   process.env.DB_USER,
-   process.env.DB_PASSWORD,
+module.exports = new Sequelize(
+   process.env.DB_NAME1,
+   process.env.DB_USER1,
+   process.env.DB_PASSWORD1,
    {
       dialect: "postgres",
-      host: process.env.DB_HOST,
-      port: process.env.DB_PORT
+      host: process.env.DB_HOST1,
+      port: process.env.DB_PORT1
    }
-)*/
+)
 
-module.exports = new Sequelize("postgres://postgres:elizaveta@localhost:5432/online-store")
-//module.exports = new Sequelize("postgres://bzmxxzeebpsrmo:3df6032fbf5629f2fc383d2c8a44b6f776a84c2ced994c1302503db0ce666721@ec2-3-248-121-12.eu-west-1.compute.amazonaws.com:5432/d9mscsh1v2fom2")
+//module.exports = new Sequelize("postgres://postgres:elizaveta@localhost:5432/online-store")
+//module.exports = new Sequelize("postgresql://um1qblxwqvtge1xe5zsn:CgpdlVqhmIu7TxQd7GfuEF7fNnEYnL@blyapaiwadysajsgsqes-postgresql.services.clever-cloud.com:5432/blyapaiwadysajsgsqes")
