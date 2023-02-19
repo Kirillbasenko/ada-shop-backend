@@ -21,6 +21,10 @@ app.get("/", (req, res) => {
    res.status(200).json({message: "Working"})
 })
 
+app.get("/res", (req, res) => {
+   res.status(200).json({message: "Working"})
+})
+
 const start = async () => {
    try{
       await sequelize.authenticate()
