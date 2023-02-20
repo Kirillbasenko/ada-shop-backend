@@ -10,7 +10,9 @@ const path = require("path")
 const PORT = process.env.PORT || 5000
 
 const app = express()
-app.use(cors())
+app.use(cors({
+   origin: ["https://ada-shop.vercel.app", "https://ada-shop.vercel.app/login", "https://ada-shop.vercel.app/registration", "ada-shop-frontend-qctm40fr5-kirillbasenko.vercel.app"]
+}))
 app.use(express.json())
 app.use(express.static(path.resolve(__dirname, "static")))
 app.use(fileUpload({}))
