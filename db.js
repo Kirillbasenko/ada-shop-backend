@@ -11,5 +11,5 @@ const {Sequelize} = require("sequelize")
    }
 )*/
 
-module.exports = new Sequelize("postgres://postgres:elizaveta@localhost:5432/online-store")
-//module.exports = new Sequelize("postgres://tkmjtqtm:egdFSuE-xdapQfZSW2F-7NxfloAE7NuR@mouse.db.elephantsql.com/tkmjtqtm")
+//module.exports = new Sequelize("postgres://postgres:elizaveta@localhost:5432/online-store")
+module.exports = new Sequelize("postgres://tkmjtqtm:egdFSuE-xdapQfZSW2F-7NxfloAE7NuR@mouse.db.elephantsql.com/tkmjtqtm")
